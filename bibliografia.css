@@ -48,6 +48,23 @@ body {
 .biblio-item:nth-child(2) { animation-delay: 0.4s; }
 .biblio-item:nth-child(3) { animation-delay: 0.8s; }
 .biblio-item:nth-child(4) { animation-delay: 1.2s; }
+.biblio-item a {
+    color: #2056a8;
+    text-decoration: underline;
+    font-weight: bold;
+    transition: color 0.2s, background 0.2s;
+    border-radius: 4px;
+    padding: 2px 4px;
+}
+
+.biblio-item a:hover,
+.biblio-item a:focus {
+    color: #fff;
+    background: #2056a8;
+    text-decoration: none;
+    outline: none;
+}
+
 
 @keyframes fadeInDown {
     from { opacity: 0; transform: translateY(-30px);}
